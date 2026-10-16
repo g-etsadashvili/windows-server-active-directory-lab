@@ -3,10 +3,14 @@
 
 This directory contains screenshots documenting my Windows Server and Hyper-V lab environment.
 
-## Hyper-V Virtual Machine Overview
+## 1. Hyper-V Virtual Machine Overview
 
-The following screenshot shows the virtual machines configured in Hyper-V for the Windows infrastructure lab.
+The screenshot shows the virtual machines available in the Hyper-V environment for the Windows infrastructure lab.
 
 ![Hyper-V virtual machine overview](hyper-v-overview.png)
 
-The environment includes Windows Server 2025 and Windows client virtual machines used for virtualization and Windows administration exercises.
+## 2. Windows Server 2025 Virtual Machine Settings
+
+The screenshot documents the virtual hardware configuration of the `DC - Windows Server 2025` virtual machine, including its assigned memory, virtual processors, firmware security settings, virtual disk, and network adapters.
+
+![Windows Server 2025 virtual machine settings](windows-server-vm-settings.png)
