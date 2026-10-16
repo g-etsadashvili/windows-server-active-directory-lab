@@ -1,97 +1,120 @@
-# Windows Server 2025 & Hyper-V Lab
+# Windows Server 2025 & Active Directory Lab
 
 ## Overview
 
-This repository documents my practical work with Windows Server 2025, Hyper-V virtualization, Windows client virtual machines, and the Windows administration concepts covered in my Klientoperativ course.
+This repository documents my Windows Server and Windows client lab developed as part of my IT infrastructure studies. The environment uses Microsoft Hyper-V to explore Windows virtualization, server configuration, Active Directory, and network infrastructure.
 
-The lab focuses on virtual machine configuration, Windows deployment, Active Directory fundamentals, and network troubleshooting.
+The lab is designed around a central Windows Server 2025 domain controller and multiple Windows client virtual machines.
 
 ## Lab Environment
 
-- **Hypervisor:** Microsoft Hyper-V
-- **Server operating system:** Windows Server 2025
-- **Client systems:** Windows 10 and Windows 11 virtual machines
-- **Planned Active Directory domain:** `lab.local`
-- **Planned NetBIOS name:** `LAB`
-- **Virtual disk format:** VHDX
+**Hypervisor:** Microsoft Hyper-V
 
-## Practical Work
+**Server operating system:** Windows Server 2025
 
-### 1. Hyper-V Virtualization
+**Virtual disk format:** VHDX
 
-Configured a Windows Server 2025 virtual machine with the following settings:
+### Virtual Machines
+
+| Virtual machine | Operating system | Purpose |
+|---|---|---|
+| DC - Windows Server 2025 | Windows Server 2025 | Central server and intended domain controller |
+| Win7pro | Windows 7 Professional | Windows client lab |
+| Win10 | Windows 10 | Windows client lab |
+| Windows11 | Windows 11 | Windows client and deployment lab |
+
+## 1. Hyper-V Virtualization
+
+Configured a Windows Server 2025 virtual machine in Hyper-V.
+
+Recorded configuration:
 
 - Generation 1 virtual machine
-- 4 GB RAM
+- 4 GB assigned RAM
 - 6 virtual CPUs
 - VHDX virtual disk
 - Virtual switch named `External-Lab`
 
-### 2. Windows 11 Master Image
+The lab also included configuring virtual network adapters and investigating connectivity between the virtual machine and its virtual network.
+
+## 2. Windows 11 Master Image
 
 Worked with a Windows 11 master virtual machine and explored:
 
-- VHDX-based virtual machine disks
+- VHDX virtual disks
 - Sysprep and Windows generalization
-- Secure Boot and TPM 2.0 configuration
-- Preparing a master image for additional virtual machines
+- Secure Boot
+- TPM 2.0
+- Virtual machine preparation and configuration
 
-### 3. Active Directory Domain Controller Setup
+These activities relate to preparing Windows installations for use in a virtualized lab.
 
-Worked on configuring Windows Server 2025 as the first domain controller for a new forest.
+## 3. Active Directory Domain Services
 
-Planned configuration:
+The intended architecture uses Windows Server 2025 as the central domain controller for a Windows domain.
 
-- Domain: `lab.local`
-- NetBIOS name: `LAB`
-- DNS server role enabled
-- Global Catalog enabled
-- No DNS delegation
+Planned domain configuration:
 
-**Status:** Domain controller promotion encountered a network connectivity problem. The virtual network adapter appeared disconnected inside the guest operating system. The networking issue was investigated but was not confirmed as resolved in the recorded lab work.
+- **Domain name:** `lab.local`
+- **NetBIOS name:** `LAB`
+- **Directory service:** Active Directory Domain Services (AD DS)
+- **Name resolution:** DNS
+- **Global Catalog:** Selected during the planned domain-controller configuration
 
-### 4. Network Troubleshooting
+### Domain Controller Setup and Troubleshooting
 
-Investigated Hyper-V networking while preparing the server for Active Directory deployment.
+During the domain-controller promotion process, Windows reported that TCP/IP networking needed to be properly configured. The server's network adapter also displayed a disconnected state.
 
-Areas examined included:
+The troubleshooting work included investigating Hyper-V virtual switches, network adapters, and the server's intended static network configuration.
 
-- Virtual switches and network adapters
-- The `External-Lab` switch
-- The Hyper-V Default Switch
-- Static IPv4 configuration
-- DNS configuration for the intended domain controller
+Intended IP configuration during troubleshooting:
 
-Intended static configuration during troubleshooting:
+- **IP address:** `192.168.100.10`
+- **Subnet mask:** `255.255.255.0`
+- **Preferred DNS server:** `192.168.100.10`
 
-- IP address: `192.168.100.10`
-- Subnet mask: `255.255.255.0`
-- Preferred DNS server: `192.168.100.10`
+These values document the configuration being investigated; they do not establish that the network or domain controller was working successfully.
 
-These values document the intended configuration, not a verified working network setup.
+**Recorded status:** Domain-controller promotion and successful domain operation were not confirmed in the available lab notes.
 
-## Klientoperativ Course Topics
+## 4. Windows Client Virtual Machines
 
-The course also covered Windows installation and administration concepts, including:
+The lab includes Windows 7 Professional, Windows 10, and Windows 11 virtual machines.
+
+The overall objective is to understand how Windows clients interact with centralized Windows Server infrastructure, including domain membership, identity management, and network services.
+
+Domain joining and centralized management should be documented as completed only after the relevant configurations have been verified.
+
+## 5. Klientoperativ Course Topics
+
+The related course material covered additional Windows administration concepts:
 
 - Windows 10 and Windows 11 installation
 - Driver management
 - MBR and GPT partitioning
 - RAID configurations
 - NTFS permissions
-- BIOS, UEFI, Secure Boot, and TPM
+- BIOS and UEFI
+- Secure Boot and TPM
 - Windows PE and WIM images
 - Windows networking fundamentals
 
-These topics are included as course learning areas and are not all claimed as completed practical configurations.
+These are course topics and are not all claimed as completed practical configurations in this repository.
 
-## Next Steps
+## 6. Next Steps
 
-- Resolve the Hyper-V guest network connectivity issue.
-- Complete and verify Active Directory Domain Services installation.
-- Verify DNS functionality for `lab.local`.
-- Test domain-controller operation before documenting further domain-management activities.
+The remaining work is to verify the server's network connectivity and establish the actual state of the Active Directory environment.
+
+Further work can include:
+
+- Completing domain-controller promotion
+- Verifying DNS and domain functionality
+- Joining Windows clients to the domain
+- Testing centralized user and computer management
+- Documenting successful configurations and troubleshooting results
 
 ## Purpose
 
-This repository records practical Windows infrastructure work, technical troubleshooting, and lessons learned while developing skills relevant to IT infrastructure and network administration.
+This repository records my practical Windows infrastructure work, virtualization setup, configuration attempts, troubleshooting, and learning progress.
+
+The objective is to develop practical skills relevant to Windows Server administration, Active Directory, and network administration.
