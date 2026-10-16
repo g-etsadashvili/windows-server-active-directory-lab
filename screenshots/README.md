@@ -1,57 +1,81 @@
-# Windows Server Lab Evidence
+# Windows Server 2025 — Lab Evidence
 
-This directory documents my hands-on Windows Server 2025 and Hyper-V lab. The screenshots show the virtual machine configuration, Active Directory domain, DNS configuration, and domain-joined Windows clients.
+This directory documents my practical Windows Server 2025 and Hyper-V lab. The screenshots show the virtual machine configuration, server administration, Active Directory, DNS, and virtual networking.
 
 ## 1. Hyper-V Virtual Machine Overview
 
-The Hyper-V environment contains Windows Server 2025 and Windows client virtual machines used for Windows infrastructure administration exercises.
+The Hyper-V environment contains Windows Server 2025 and Windows client virtual machines.
 
 ![Hyper-V virtual machine overview](hyper-v-overview.png)
 
 ## 2. Windows Server Virtual Machine Settings
 
-The screenshot documents the hardware and configuration settings of the Windows Server 2025 virtual machine.
+Virtual hardware configuration for the Windows Server 2025 domain controller, including memory, processors, firmware, storage, and network adapters.
 
 ![Windows Server VM settings](windows-server-vm-settings.png)
 
 ## 3. Server Manager
 
-Server Manager displays the installed server roles and management tools, including Active Directory Domain Services and DNS.
+The Server Manager dashboard provides access to Windows Server management tools and installed server roles.
 
 ![Server Manager dashboard](server-manager.png)
 
 ## 4. Local Server Configuration
 
-The Local Server page shows the server name, the `lab.local` domain membership, and network configuration information.
+Server identity, domain membership, network interfaces, firewall status, and other local server properties.
 
 ![Local Server configuration](local-server.png)
 
-## 5. Active Directory Domain
+## 5. Active Directory Domain Controllers
 
-The lab uses the `lab.local` Active Directory domain to manage domain-related infrastructure.
+The Domain Controllers container in Active Directory Users and Computers, showing the domain controller registered in the `lab.local` domain.
 
-### Domain Controllers
+![Active Directory domain controllers](active-directory-domain-controllers.png)
 
-The Domain Controllers container shows the Windows Server domain controller.
+## 6. Active Directory Domain Controllers — Additional View
 
-![Active Directory domain controller](active-directory-domain-controllers.png)
-
-An additional screenshot of the Domain Controllers container is also available.
+An additional screenshot documenting the domain controller object in Active Directory.
 
 ![Additional domain controller view](active-directory-domain-controllers1.png)
 
-### Domain-Joined Computers
+## 7. Active Directory Computer Accounts
 
-The Computers container shows the Windows client machines registered in Active Directory: WIN7, WIN10, and WIN11.
+The Computers container showing the `WIN7`, `WIN10`, and `WIN11` computer objects registered in Active Directory.
 
-![Active Directory computers](active-directory-computers.png)
+![Active Directory computer accounts](active-directory-computers.png)
 
-## 6. DNS Configuration
+## 8. DNS Forward Lookup Zones
 
-DNS is configured for the `lab.local` domain.
+DNS Manager showing the `lab.local` and `_msdcs.lab.local` forward lookup zones.
 
-### Forward Lookup Zones
+![DNS forward lookup zones](dns-forward-lookup-zones.png)
 
-The DNS Manager screenshot shows the available forward lookup zones, including `lab.local` and `_msdcs.lab.local`.
+## 9. DNS Records in lab.local
 
-![DNS forward lookup zones](dns-forward-lookup-zones.png
+DNS records displayed in the `lab.local` forward lookup zone, including host records for the server and Windows clients.
+
+![DNS records in lab.local](dns-lab-local-records.png)
+
+## 10. Domain Controller Network Adapter — Default Switch
+
+The Hyper-V network adapter configuration for the `Default Switch`.
+
+![Default Switch network adapter](<dc-network-adapter-default-switch 1.png>)
+
+## 11. Domain Controller Network Adapter — Lab-Network
+
+The Hyper-V network adapter configuration for `Lab-Network`.
+
+![Lab-Network adapter](<dc-network-adapter-lab-network 2.png>)
+
+## Summary
+
+The screenshots document:
+
+- Hyper-V virtual machine configuration
+- Windows Server 2025 administration
+- Active Directory and domain computer objects
+- DNS zones and host records
+- Hyper-V virtual switches and network adapters
+
+These screenshots provide evidence of the visible configuration. They do not independently establish that every service or network connection has been tested successfully.
