@@ -1,9 +1,12 @@
+
 # Lab Evidence
 
-This directory contains screenshots documenting the Windows Server and Hyper-V lab environment.
+This directory contains screenshots documenting my Windows Server and Hyper-V lab environment.
 
 ## Hyper-V Virtual Machine Overview
 
-The Hyper-V environment includes Windows Server 2025 and Windows client virtual machines used for Windows infrastructure administration exercises.
+The following screenshot shows the virtual machines configured in Hyper-V for the Windows infrastructure lab.
 
-The screenshots are intended to document the actual lab configuration and its progress.
+![Hyper-V virtual machine overview](hyper-v-overview.png)
+
+The environment includes Windows Server 2025 and Windows client virtual machines used for virtualization and Windows administration exercises.
