@@ -33,7 +33,7 @@ The documentation covers the lab environment, server configuration, network adap
 
 **Technologies:** Windows Server 2025, Hyper-V, Active Directory, DNS, VHDX
 
-[View Windows Server 2025 Lab](./windows-server-2025-lab/README.md)
+[View Windows Server 2025 Lab →](https://github.com/g-etsadashvili/windows-server-active-directory-lab/blob/main/windows-server-2025-lab/screenshots/README.md)
 
 ### 2. Windows 7 Professional Imaging Lab
 
@@ -43,13 +43,13 @@ The project includes step-by-step documentation and screenshots illustrating the
 
 **Technologies:** Windows 7 Professional, Sysprep, Windows PE, DISM, WIM, Hyper-V
 
-[View Windows 7 Imaging Lab](./windows-7-imaging-lab/README.md)
+**[View Windows 7 Imaging Lab →](https://github.com/g-etsadashvili/windows-server-active-directory-lab/blob/main/windows-7-imaging-lab/README.md)**
 
 ## Related Technical Work
 
 My Linux administration exercises are maintained in a separate repository and are not part of the Windows infrastructure labs.
 
-[View Linux Administration Labs](https://github.com/g-etsadashvili/linux-administration-labs)
+**[View Linux Administration Labs →](https://github.com/g-etsadashvili/linux-administration-labs)**
 
 ## Documentation Approach
 
