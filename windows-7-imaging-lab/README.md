@@ -124,3 +124,111 @@ The screenshots are numbered sequentially to follow the order of the lab procedu
 A generalized Windows 7 Professional installation was captured as a WIM image and deployed to a separate Hyper-V test virtual machine. The target system was booted and accessed successfully, providing practical experience with the Windows imaging and deployment workflow.
 
 This project demonstrates an end-to-end operating system imaging process in a virtual lab, including preparation, capture, deployment, and verification.
+
+## Screenshot Documentation
+
+The following screenshots document the complete Windows 7 Professional imaging workflow, from exporting and cloning the virtual machine to capturing a generalized WIM image, deploying it to a clean test VM, and verifying the final installation.
+
+### Phase 1 — Exporting and Cloning the Virtual Machine
+
+![Step 1](./screenshots/1%20exporting%20windows%207%20pro.png)
+
+![Step 2](./screenshots/2%20Importing%20virtual%20machine.png)
+
+![Step 3](./screenshots/3%20importing%20virtual%20machine.png)
+
+![Step 4](./screenshots/4%20importing%20virtual%20machine.png)
+
+![Step 5](./screenshots/5%20importing%20virtual%20machine.png)
+
+![Step 6](./screenshots/6%20importing%20virtual%20machine.png)
+
+![Step 7](./screenshots/7%20importing%20virtual%20machine.png)
+
+![Step 8](./screenshots/8%20importing%20virtual%20machine.png)
+
+![Step 9](./screenshots/9%20Created%20Windows%207%20pro%20clone.png)
+
+![Step 10](./screenshots/10%20entering%20Win7%20pro%20clone%20%28system%20properties%29.png)
+
+### Phase 2 — Sysprep and Windows PE Preparation
+
+![Step 11](./screenshots/11%20using%20sysprep%20on%20windows%207%20pro%20clone.png)
+
+![Step 12](./screenshots/12%20executing%20systemprep%20with%20generalize%20option.png)
+
+![Step 13](./screenshots/13%20systemprepr%20executing.png)
+
+![Step 14](./screenshots/14%20disconnecting%20network%20on%20my%20win7pro%20clone.png)
+
+![Step 15](./screenshots/15%20adding%20Windows%20PE%20iso%20file.png)
+
+![Step 16](./screenshots/16%20entering%20WindPE%20shell%20mode%20on%20Win7pro%20clone.png)
+
+### Phase 3 — Additional Storage and WIM Capture
+
+![Step 17](./screenshots/17%20I%20have%20only%20one%20disk%20I%20need%20to%20add%20additional%20disk%20to%20store%20WIM%20file.png)
+
+![Step 18](./screenshots/18%20adding%20additional%20hard%20drive%20for%20WIM.png)
+
+![Step 19](./screenshots/19%20adding%20additional%20hard%20drive%20for%20WIM.png)
+
+![Step 20](./screenshots/20%20adding%20additional%20hard%20drive%20for%20WIM.png)
+
+![Step 21](./screenshots/21%20adding%20additional%20hard%20drive%20for%20WIM.png)
+
+![Step 22](./screenshots/22%20adding%20additional%20hard%20drive%20for%20WIM.png)
+
+![Step 23](./screenshots/23%20attaching%20hard%20disk%20to%20Win7pro%20clone.png)
+
+![Step 24](./screenshots/24%20in%20WinPE%20I%20did%20rescan%20now%20I%20have%20two%20disks%20from%20which%20I%20can%20chose%20where%20to%20install%20WIM.png)
+
+![Step 25](./screenshots/25%20selecting%20disk%2C%20formating%20it%20and%20assigning%20letter%20D.png)
+
+![Step 26](./screenshots/26%20confirming%20that%20fragmentation%20was%20successful.png)
+
+![Step 27](./screenshots/27%20formated%20the%20volume%202%20also%20for%20WIM%20file.png)
+
+![Step 28](./screenshots/28%20Verify%20the%20Windows%20partition.png)
+
+![Step 29](./screenshots/29%20Capturing%20the%20Windows%207%20pro%20clone%20image.png)
+
+![Step 30](./screenshots/30%20verification%20that%20WIM%20was%20successful%20.png)
+
+### Phase 4 — Creating the Clean Test Virtual Machine
+
+![Step 31](./screenshots/31%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
+
+![Step 32](./screenshots/32%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
+
+![Step 33](./screenshots/33%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
+
+![Step 34](./screenshots/34%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
+
+![Step 35](./screenshots/35%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
+
+![Step 36](./screenshots/36%20confirming%20Win7pro%20Image%20Test%20existance%20and%20fixing%20OS.png)
+
+![Step 37](./screenshots/37%20adding%20WinPE%20to%20Win7pro%20Image%20Test%20so%20I%20could%20deploy%20WIM%20to%20it.png)
+
+### Phase 5 — Deploying and Verifying the WIM Image
+
+![Step 38](./screenshots/38%20deploying%20WIM%20on%20Win7pro%20Image%20Test.png)
+
+![Step 39](./screenshots/39%20confirming%20that%20I%20added%20additional%20drive%20Win7Pro-ImageDestination%20where%20I%20have%20WIM%20file.png)
+
+![Step 40](./screenshots/40%20Identifying%20the%20disks%20.png)
+
+![Step 41](./screenshots/41%20verifying%20which%20disk%20needs%20to%20be%20partitioned%20.png)
+
+![Step 42](./screenshots/42%20partitioning%20disk%20addigning%20letters%20to%20drive.png)
+
+![Step 43](./screenshots/43%20successfully%20created.png)
+
+![Step 44](./screenshots/44%20booting%20to%20windows%207%20pro%20Image%20Test.png)
+
+![Step 45](./screenshots/45%20Logged%20into%20Win7pro%20Image%20Test.png)
+
+![Step 46](./screenshots/46%20finding%20duplicate%20boot%20entries.png)
+
+![Step 47](./screenshots/47%20proof%20of%20successful%20installation.png)
