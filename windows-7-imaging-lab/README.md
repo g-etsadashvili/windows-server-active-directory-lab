@@ -197,15 +197,15 @@ The following screenshots document the complete Windows 7 Professional imaging w
 
 ### Phase 4 — Creating the Clean Test Virtual Machine
 
-![Step 31](./screenshots/31%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
+![Step 31](./screenshots/31%20creating%20clean%20%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
 
-![Step 32](./screenshots/32%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
+![Step 32](./screenshots/32%20creating%20clean%20%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
 
-![Step 33](./screenshots/33%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
+![Step 33](./screenshots/33%20creating%20clean%20%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
 
-![Step 34](./screenshots/34%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
+![Step 34](./screenshots/34%20%20creating%20clean%20%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
 
-![Step 35](./screenshots/35%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
+![Step 35](./screenshots/35%20creating%20clean%20%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
 
 ![Step 36](./screenshots/36%20confirming%20Win7pro%20Image%20Test%20existance%20and%20fixing%20OS.png)
 
