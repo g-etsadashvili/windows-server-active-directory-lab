@@ -306,202 +306,202 @@ This section documents the complete Windows 7 Professional imaging workflow in H
 
 ### 1. Virtual Machine Preparation
 
-![Step 1 — Exporting Windows 7 Professional](<./1 exporting windows 7 pro.png>)
+![Step 1 — Exporting Windows 7 Professional](./1%20exporting%20windows%207%20pro.png)
 
 **Step 1 — Exporting Windows 7 Professional:** Preparing the original virtual machine for the imaging workflow.
 
-![Step 2 — Importing virtual machine](<./2 Importing virtual machine.png>)
+![Step 2 — Importing virtual machine](./2%20Importing%20virtual%20machine.png)
 
 **Step 2 — Importing the virtual machine:** Importing the VM into Hyper-V.
 
-![Step 3 — Importing virtual machine](<./3 importing virtual machine.png>)
+![Step 3 — Importing virtual machine](./3%20importing%20virtual%20machine.png)
 
 **Step 3 — Importing virtual machine:** Continuing the VM import process.
 
-![Step 4 — Importing virtual machine](<./4 importing virtual machine.png>)
+![Step 4 — Importing virtual machine](./4%20importing%20virtual%20machine.png)
 
 **Step 4 — Importing virtual machine:** Further import configuration.
 
-![Step 5 — Importing virtual machine](<./5 importing virtual machine.png>)
+![Step 5 — Importing virtual machine](./5%20importing%20virtual%20machine.png)
 
 **Step 5 — Importing virtual machine:** Continuing the import workflow.
 
-![Step 6 — Importing virtual machine](<./6 importing virtual machine.png>)
+![Step 6 — Importing virtual machine](./6%20importing%20virtual%20machine.png)
 
 **Step 6 — Importing virtual machine:** Import setup progress.
 
-![Step 7 — Importing virtual machine](<./7 importing virtual machine.png>)
+![Step 7 — Importing virtual machine](./7%20importing%20virtual%20machine.png)
 
 **Step 7 — Importing virtual machine:** Completing the import workflow.
 
-![Step 8 — Importing virtual machine](<./8 importing virtual machine.png>)
+![Step 8 — Importing virtual machine](./8%20importing%20virtual%20machine.png)
 
 **Step 8 — Importing virtual machine:** Final stage of the import process.
 
-![Step 9 — Creating the Windows 7 Professional clone](<./9 Created Windows 7 pro clone.png>)
+![Step 9 — Created Windows 7 Pro clone](./9%20Created%20Windows%207%20pro%20clone.png)
 
 **Step 9 — Creating the clone:** Creating the Windows 7 Professional clone used for imaging.
 
 ### 2. Sysprep Preparation
 
-![Step 10 — System properties](<./10 entering Win7 pro clone (system properties).png>)
+![Step 10 — Entering Windows 7 Pro clone system properties](./10%20entering%20Win7%20pro%20clone%20%28system%20properties%29.png)
 
 **Step 10 — System properties:** Inspecting the cloned Windows 7 Professional system.
 
-![Step 11 — Using Sysprep](<./11 using sysprep on windows 7 pro clone.png>)
+![Step 11 — Using Sysprep on Windows 7 Pro clone](./11%20using%20sysprep%20on%20windows%207%20pro%20clone.png)
 
 **Step 11 — Sysprep:** Opening and preparing Sysprep on the cloned system.
 
-![Step 12 — Sysprep Generalize option](<./12 executing systemprep with generalize option.png>)
+![Step 12 — Executing Sysprep with Generalize](./12%20executing%20systemprep%20with%20generalize%20option.png)
 
 **Step 12 — Generalize option:** Configuring Sysprep with the Generalize option.
 
-![Step 13 — Sysprep executing](<./13 systemprepr executing.png>)
+![Step 13 — Sysprep executing](./13%20systemprepr%20executing.png)
 
 **Step 13 — Sysprep execution:** Running the system preparation process.
 
-![Step 14 — Disconnecting the network](<./14 disconnecting network on my win7pro clone.png>)
+![Step 14 — Disconnecting the network](./14%20disconnecting%20network%20on%20my%20win7pro%20clone.png)
 
 **Step 14 — Network disconnection:** Disconnecting the clone from the network before continuing.
 
 ### 3. Windows PE and Storage Preparation
 
-![Step 15 — Adding Windows PE ISO](<./15 adding Windows PE iso file.png>)
+![Step 15 — Adding Windows PE ISO](./15%20adding%20Windows%20PE%20iso%20file.png)
 
 **Step 15 — Windows PE ISO:** Attaching the Windows PE ISO to the virtual machine.
 
-![Step 16 — Entering Windows PE shell mode](<./16 entering WindPE shell mode on Win7pro clone.png>)
+![Step 16 — Entering Windows PE shell mode](./16%20entering%20WindPE%20shell%20mode%20on%20Win7pro%20clone.png)
 
 **Step 16 — Windows PE shell:** Booting into the Windows PE environment.
 
-![Step 17 — Identifying the need for an additional disk](<./17 I have only one disk I need to add additional disk to store WIM file.png>)
+![Step 17 — Identifying the need for an additional disk](./17%20I%20have%20only%20one%20disk%20I%20need%20to%20add%20additional%20disk%20to%20store%20WIM%20file.png)
 
 **Step 17 — Storage planning:** Identifying the need for a separate disk to store the WIM image.
 
-![Step 18 — Adding an additional hard drive](<./18 adding additional hard drive for WIM.png>)
+![Step 18 — Adding an additional hard drive](./18%20adding%20additional%20hard%20drive%20for%20WIM.png)
 
 **Step 18 — Adding storage:** Configuring an additional virtual hard drive.
 
-![Step 19 — Adding an additional hard drive](<./19 adding additional hard drive for WIM.png>)
+![Step 19 — Adding an additional hard drive](./19%20adding%20additional%20hard%20drive%20for%20WIM.png)
 
 **Step 19 — Additional storage:** Continuing the virtual disk configuration.
 
-![Step 20 — Adding an additional hard drive](<./20 adding additional hard drive for WIM.png>)
+![Step 20 — Adding an additional hard drive](./20%20adding%20additional%20hard%20drive%20for%20WIM.png)
 
 **Step 20 — Additional storage:** Further configuration of the WIM destination disk.
 
-![Step 21 — Adding an additional hard drive](<./21 adding additional hard drive for WIM.png>)
+![Step 21 — Adding an additional hard drive](./21%20adding%20additional%20hard%20drive%20for%20WIM.png)
 
 **Step 21 — Additional storage:** Continuing the disk setup.
 
-![Step 22 — Adding an additional hard drive](<./22 adding additional hard drive for WIM.png>)
+![Step 22 — Adding an additional hard drive](./22%20adding%20additional%20hard%20drive%20for%20WIM.png)
 
 **Step 22 — Additional storage:** Completing the additional disk setup.
 
-![Step 23 — Attaching the hard disk](<./23 attaching hard disk to Win7pro clone.png>)
+![Step 23 — Attaching the hard disk](./23%20attaching%20hard%20disk%20to%20Win7pro%20clone.png)
 
 **Step 23 — Attaching the disk:** Connecting the additional virtual hard drive to the clone.
 
-![Step 24 — Rescanning disks in Windows PE](<./24 in WinPE I did rescan now I have two disks from which I can chose where to install WIM.png>)
+![Step 24 — Rescanning disks in Windows PE](./24%20in%20WinPE%20I%20did%20rescan%20now%20I%20have%20two%20disks%20from%20which%20I%20can%20chose%20where%20to%20install%20WIM.png)
 
 **Step 24 — Disk rescan:** Rescanning storage in Windows PE to detect both disks.
 
-![Step 25 — Selecting and formatting the disk](<./25 selecting disk, formating it and assigning letter D.png>)
+![Step 25 — Selecting and formatting the disk](./25%20selecting%20disk%2C%20formating%20it%20and%20assigning%20letter%20D.png)
 
 **Step 25 — Disk preparation:** Selecting the destination disk, formatting it, and assigning drive letter D.
 
-![Step 26 — Confirming disk preparation](<./26 confirming that fragmentation was successful.png>)
+![Step 26 — Confirming disk preparation](./26%20confirming%20that%20fragmentation%20was%20successful.png)
 
 **Step 26 — Formatting verification:** Checking the result of the disk preparation operation.
 
-![Step 27 — Formatting the second volume](<./27 formated the volume 2 also for WIM file.png>)
+![Step 27 — Formatting the second volume](./27%20formated%20the%20volume%202%20also%20for%20WIM%20file.png)
 
 **Step 27 — Destination volume:** Preparing the second volume for the WIM file.
 
-![Step 28 — Verifying the Windows partition](<./28 Verify the Windows partition.png>)
+![Step 28 — Verifying the Windows partition](./28%20Verify%20the%20Windows%20partition.png)
 
 **Step 28 — Partition verification:** Identifying and verifying the Windows partition before capturing the image.
 
 ### 4. Capturing and Verifying the WIM Image
 
-![Step 29 — Capturing the Windows 7 Professional image](<./29 Capturing the Windows 7 pro clone image.png>)
+![Step 29 — Capturing the Windows 7 Pro clone image](./29%20Capturing%20the%20Windows%207%20pro%20clone%20image.png)
 
 **Step 29 — Image capture:** Capturing the Windows 7 Professional clone into a WIM image.
 
-![Step 30 — Verifying the WIM image](<./30 verification that WIM was successful .png>)
+![Step 30 — Verifying the WIM image](./30%20verification%20that%20WIM%20was%20successful%20.png)
 
 **Step 30 — WIM verification:** Checking that the captured image was created successfully.
 
 ### 5. Creating and Preparing the Clean Test VM
 
-![Step 31 — Creating the clean test VM](<./31 creating clean windows 7 pro Image test from the winpro7 clone.png>)
+![Step 31 — Creating the clean test VM](./31%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
 
 **Step 31 — Test VM preparation:** Starting the creation of a clean Windows 7 Professional image test VM.
 
-![Step 32 — Creating the clean test VM](<./32 creating clean windows 7 pro Image test from the winpro7 clone.png>)
+![Step 32 — Creating the clean test VM](./32%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
 
 **Step 32 — Test VM preparation:** Continuing the test VM creation process.
 
-![Step 33 — Creating the clean test VM](<./33 creating clean windows 7 pro Image test from the winpro7 clone.png>)
+![Step 33 — Creating the clean test VM](./33%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
 
 **Step 33 — Test VM preparation:** Further configuration of the clean test VM.
 
-![Step 34 — Creating the clean test VM](<./34 creating clean windows 7 pro Image test from the winpro7 clone.png>)
+![Step 34 — Creating the clean test VM](./34%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
 
 **Step 34 — Test VM preparation:** Continuing the virtual machine setup.
 
-![Step 35 — Creating the clean test VM](<./35 creating clean windows 7 pro Image test from the winpro7 clone.png>)
+![Step 35 — Creating the clean test VM](./35%20creating%20clean%20windows%207%20pro%20Image%20test%20from%20the%20winpro7%20clone.png)
 
 **Step 35 — Test VM preparation:** Completing the creation workflow for the image test VM.
 
-![Step 36 — Confirming the test VM and fixing the OS](<./36 confirming Win7pro Image Test existance and fixing OS.png>)
+![Step 36 — Confirming the test VM and fixing the OS](./36%20confirming%20Win7pro%20Image%20Test%20existance%20and%20fixing%20OS.png)
 
 **Step 36 — Test VM verification:** Confirming the test VM exists and addressing the operating system setup.
 
-![Step 37 — Adding Windows PE to the test VM](<./37 adding WinPE to Win7pro Image Test so I could deploy WIM to it.png>)
+![Step 37 — Adding Windows PE to the test VM](./37%20adding%20WinPE%20to%20Win7pro%20Image%20Test%20so%20I%20could%20deploy%20WIM%20to%20it.png)
 
 **Step 37 — Windows PE setup:** Attaching Windows PE to the test VM to deploy the WIM image.
 
 ### 6. Deploying the WIM Image
 
-![Step 38 — Deploying the WIM image](<./38 deploying WIM on Win7pro Image Test.png>)
+![Step 38 — Deploying the WIM image](./38%20deploying%20WIM%20on%20Win7pro%20Image%20Test.png)
 
 **Step 38 — Image deployment:** Deploying the captured WIM image to the Windows 7 Professional test VM.
 
-![Step 39 — Confirming the WIM destination drive](<./39 confirming that I added additional drive Win7Pro-ImageDestination where I have WIM file.png>)
+![Step 39 — Confirming the WIM destination drive](./39%20confirming%20that%20I%20added%20additional%20drive%20Win7Pro-ImageDestination%20where%20I%20have%20WIM%20file.png)
 
 **Step 39 — Destination verification:** Confirming the additional drive containing the WIM image is available.
 
-![Step 40 — Identifying the disks](<./40 Identifying the disks .png>)
+![Step 40 — Identifying the disks](./40%20Identifying%20the%20disks%20.png)
 
 **Step 40 — Disk identification:** Identifying the disks in the Windows PE environment.
 
-![Step 41 — Verifying which disk needs partitioning](<./41 verifying which disk needs to be partitioned .png>)
+![Step 41 — Verifying which disk needs partitioning](./41%20verifying%20which%20disk%20needs%20to%20be%20partitioned%20.png)
 
 **Step 41 — Disk verification:** Confirming which disk needs to be partitioned.
 
-![Step 42 — Partitioning the disk and assigning drive letters](<./42 partitioning disk addning letters to drive.png>)
+![Step 42 — Partitioning the disk and assigning drive letters](./42%20partitioning%20disk%20addigning%20letters%20to%20drive.png)
 
 **Step 42 — Partitioning:** Partitioning the disk and assigning drive letters for deployment.
 
-![Step 43 — Successfully created](<./43 successfully created.png>)
+![Step 43 — Successfully created](./43%20successfully%20created.png)
 
 **Step 43 — Creation confirmation:** Verifying the successful completion of the disk preparation step.
 
 ### 7. Boot Verification and Final Result
 
-![Step 44 — Booting Windows 7 Professional Image Test](<./44 booting to windows 7 pro Image Test.png>)
+![Step 44 — Booting Windows 7 Pro Image Test](./44%20booting%20to%20windows%207%20pro%20Image%20Test.png)
 
 **Step 44 — First boot:** Booting the deployed Windows 7 Professional test VM.
 
-![Step 45 — Logged into Windows 7 Professional Image Test](<./45 Logged into Win7pro Image Test.png>)
+![Step 45 — Logged into Windows 7 Pro Image Test](./45%20Logged%20into%20Win7pro%20Image%20Test.png)
 
 **Step 45 — Login verification:** Successfully logging into the deployed Windows 7 Professional test VM.
 
-![Step 46 — Finding duplicate boot entries](<./46 finding duplicate boot entries.png>)
+![Step 46 — Finding duplicate boot entries](./46%20finding%20duplicate%20boot%20entries.png)
 
 **Step 46 — Boot configuration troubleshooting:** Identifying duplicate Windows boot entries.
 
-![Step 47 — Proof of successful installation](<./47 proof of successful installation.png>)
+![Step 47 — Proof of successful installation](./47%20proof%20of%20successful%20installation.png)
 
 **Step 47 — Final verification:** Documenting the successful Windows 7 Professional installation and boot.
