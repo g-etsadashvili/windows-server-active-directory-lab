@@ -33,7 +33,7 @@ The documentation covers the lab environment, server configuration, network adap
 
 **Technologies:** Windows Server 2025, Hyper-V, Active Directory, DNS, VHDX
 
-[View Windows Server 2025 Lab →](https://github.com/g-etsadashvili/windows-server-active-directory-lab/blob/main/windows-server-2025-lab/screenshots/README.md)
+**[View Windows Server 2025 Lab →](https://github.com/g-etsadashvili/windows-server-active-directory-lab/blob/main/windows-server-2025-lab/screenshots/README.md)**
 
 
 
