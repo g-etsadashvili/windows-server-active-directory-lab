@@ -1,191 +1,70 @@
 
-# Windows Server 2025 & Active Directory Lab
+# IT Infrastructure & Systems Administration Portfolio
 
 ![Windows Server](https://img.shields.io/badge/Windows_Server-2025-0078D4?logo=windows&logoColor=white)
-![Hyper-V](https://img.shields.io/badge/Hyper--V-Virtualization-0078D4?logo=windows&logoColor=white)
+![Hyper-V](https://img.shields.io/badge/Virtualization-Hyper--V-0078D4?logo=windows&logoColor=white)
 ![Active Directory](https://img.shields.io/badge/Active_Directory-AD_DS-4472C4)
-![Status](https://img.shields.io/badge/Status-In_Progress-orange)
-
-A hands-on IT infrastructure lab documenting Windows virtualization, Windows Server configuration, Windows client deployment, and Active Directory setup and troubleshooting using Microsoft Hyper-V.
-
-This repository records practical work, configuration attempts, technical observations, and lessons learned while developing skills in Windows Server and network administration.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Lab Environment](#lab-environment)
-- [Lab Architecture](#lab-architecture)
-- [1. Hyper-V Virtualization](#1-hyper-v-virtualization)
-- [2. Windows 11 Master Image](#2-windows-11-master-image)
-- [3. Active Directory Domain Services](#3-active-directory-domain-services)
-- [4. Windows Client Virtual Machines](#4-windows-client-virtual-machines)
-- [5. Klientoperativ Course Topics](#5-klientoperativ-course-topics)
-- [6. Next Steps](#6-next-steps)
-- [Purpose](#purpose)
-- [Windows Server 2025 Lab Evidence](#windows-server-2025-lab-evidence)
+![Status](https://img.shields.io/badge/Portfolio-In_Progress-orange)
 
 ## Overview
 
-The lab uses Microsoft Hyper-V to explore virtual machines, virtual networking, Windows Server 2025, and Windows client operating systems.
+This repository showcases practical IT infrastructure projects focused on Windows system administration, virtualization, Windows deployment, directory services, and network infrastructure.
 
-The intended environment includes a Windows Server 2025 virtual machine for domain services and separate Windows client virtual machines for administration and deployment practice.
+The projects document hands-on configurations, troubleshooting processes, technical evidence, and lessons learned through practical lab work as part of my IT infrastructure studies.
 
-**Current documentation status:** Active Directory promotion and successful domain operation have not been confirmed in the available lab notes. The repository distinguishes planned configurations from verified results.
+Each project has its own documentation and screenshots to keep the work organized and easy to explore.
 
-## Lab Environment
+## Technical Focus
 
-| Component | Configuration |
-|---|---|
-| Hypervisor | Microsoft Hyper-V |
-| Host operating system | Windows 11 |
-| Server operating system | Windows Server 2025 |
-| Virtual disk format | VHDX |
-| Virtual switch | `External-Lab` |
+- **Windows Server Administration** — server configuration and infrastructure services
+- **Active Directory & DNS** — directory services, domain infrastructure, and name resolution
+- **Virtualization** — Microsoft Hyper-V, virtual machines, virtual disks, and virtual networking
+- **Windows Deployment** — Sysprep, Windows PE, WIM image capture, and deployment workflows
+- **Network Administration** — IP configuration, virtual switches, connectivity, and troubleshooting
+- **Technical Documentation** — configuration procedures, screenshots, verification, and lessons learned
 
-### Virtual Machines
+## Projects
 
-| Virtual machine | Operating system | Purpose |
-|---|---|---|
-| DC - Windows Server 2025 | Windows Server 2025 | Intended domain controller |
-| Win7pro | Windows 7 Professional | Windows client and imaging lab |
-| Win10 | Windows 10 | Windows client lab |
-| Windows11 | Windows 11 | Windows client and deployment lab |
+### 1. Windows Server 2025 & Active Directory Lab
 
-## Lab Architecture
+A Windows infrastructure lab focused on Windows Server 2025, Hyper-V, virtual networking, Active Directory Domain Services, and DNS.
 
-The intended architecture consists of a Windows 11 Hyper-V host, a virtual switch, a Windows Server virtual machine, and Windows client virtual machines.
+The documentation covers the lab environment, server configuration, network adapter investigations, directory objects, DNS configuration, screenshots, and troubleshooting.
 
-```text
-Physical Computer
-└── Windows 11 Host
-    └── Microsoft Hyper-V
-        ├── External-Lab Virtual Switch
-        ├── DC - Windows Server 2025
-        │   ├── Intended role: Domain Controller
-        │   ├── Active Directory Domain Services
-        │   └── DNS
-        ├── Win7pro
-        ├── Win10
-        └── Windows11
-```
+**Technologies:** Windows Server 2025, Hyper-V, Active Directory, DNS, VHDX
 
-**Note:** This diagram represents the intended lab design, not proof of successful network connectivity, domain-controller promotion, or DNS operation.
+[View Windows Server 2025 Lab](./windows-server-2025-lab/README.md)
 
-## 1. Hyper-V Virtualization
+### 2. Windows 7 Professional Imaging Lab
 
-Configured a Windows Server 2025 virtual machine in Microsoft Hyper-V.
+A separate imaging and deployment project documenting Windows 7 Professional preparation, Sysprep generalization, Windows PE, WIM image capture, and deployment to a test virtual machine.
 
-### Recorded Configuration
+The project includes step-by-step documentation and screenshots illustrating the imaging workflow.
 
-- **Generation:** 1
-- **Assigned memory:** 4 GB
-- **Virtual processors:** 6
-- **Virtual disk:** VHDX
-- **Virtual switch:** `External-Lab`
+**Technologies:** Windows 7 Professional, Sysprep, Windows PE, DISM, WIM, Hyper-V
 
-The lab also involved configuring virtual network adapters and investigating connectivity between the virtual machine and its virtual network.
+[View Windows 7 Imaging Lab](./windows-7-imaging-lab/README.md)
 
-## 2. Windows 11 Master Image
+## Related Technical Work
 
-Worked with a Windows 11 master virtual machine and explored:
+My Linux administration exercises are maintained in a separate repository and are not part of the Windows infrastructure labs.
 
-- VHDX virtual disks
-- Sysprep and Windows generalization
-- Secure Boot
-- TPM 2.0
-- Virtual machine preparation and configuration
+[View Linux Administration Labs](https://github.com/g-etsadashvili/linux-administration-labs)
 
-These activities relate to preparing Windows installations for use in a virtualized environment.
+## Documentation Approach
 
-**Documentation note:** This section covers the Windows 11 master-image work. The separate Windows 7 Professional Sysprep and WIM imaging workflow should be documented independently to keep the two workflows distinct.
+Each project aims to distinguish between:
 
-## 3. Active Directory Domain Services
+- **Configuration:** settings and procedures applied in the lab
+- **Evidence:** screenshots and recorded observations
+- **Troubleshooting:** issues encountered and investigations performed
+- **Verification:** tests used to establish whether a configuration works
+- **Next steps:** remaining tasks and opportunities for improvement
 
-The intended design uses Windows Server 2025 as the central domain controller for a Windows domain.
+Configurations and services are described as successfully verified only when supported by actual test results.
 
-### Planned Domain Configuration
+## About This Portfolio
 
-- **Domain name:** `lab.local`
-- **NetBIOS name:** `LAB`
-- **Directory service:** Active Directory Domain Services (AD DS)
-- **Name resolution:** DNS
-- **Global Catalog:** Selected during the planned domain-controller configuration
+This portfolio documents my practical development toward a career in IT infrastructure, systems administration, and network administration.
 
-These values describe the intended configuration and should not be interpreted as confirmation that the domain was successfully established.
-
-### Domain Controller Setup and Troubleshooting
-
-During the domain-controller promotion process, Windows reported that TCP/IP networking needed to be properly configured. The server's network adapter also displayed a disconnected state.
-
-Troubleshooting involved investigating:
-
-- Hyper-V virtual switches
-- Virtual network adapters
-- Network connectivity
-- The intended static IP configuration
-
-### Intended Network Configuration
-
-| Setting | Intended value |
-|---|---|
-| IP address | `192.168.100.10` |
-| Subnet mask | `255.255.255.0` |
-| Preferred DNS server | `192.168.100.10` |
-
-These values document the configuration under investigation. They do not establish that the network or domain controller was working successfully.
-
-**Recorded status:** Domain-controller promotion and successful domain operation were not confirmed in the available lab notes.
-
-## 4. Windows Client Virtual Machines
-
-The lab includes Windows 7 Professional, Windows 10, and Windows 11 virtual machines.
-
-The learning objectives include understanding how Windows clients interact with centralized Windows infrastructure, including:
-
-- Domain membership
-- User and computer identity management
-- DNS and network services
-- Centralized administration
-
-Domain joining and centralized management should be documented as completed only after the relevant configurations have been verified.
-
-## 5. Klientoperativ Course Topics
-
-The related course material covered the following Windows administration topics:
-
-- Windows 10 and Windows 11 installation
-- Driver management
-- MBR and GPT partitioning
-- RAID configurations
-- NTFS permissions
-- BIOS and UEFI
-- Secure Boot and TPM
-- Windows PE and WIM images
-- Windows networking fundamentals
-
-These topics represent course material and learning areas. They are not all claimed as completed practical configurations in this repository.
-
-## 6. Next Steps
-
-The next steps are to verify the server's network configuration and establish the actual state of the Active Directory environment.
-
-Planned work includes:
-
-- Verifying virtual network adapter connectivity
-- Confirming the server's IP configuration
-- Completing domain-controller promotion, if not already completed
-- Verifying DNS and domain functionality
-- Joining Windows clients to the domain
-- Testing centralized user and computer management
-- Recording successful tests and troubleshooting results
-
-## Purpose
-
-This repository documents practical Windows infrastructure work, virtualization setup, configuration attempts, troubleshooting, and learning progress.
-
-The objective is to develop practical skills relevant to Windows Server administration, Active Directory, virtualization, and network administration.
-## Windows Server 2025 Lab Evidence
-
-Screenshots documenting the Windows Server 2025 and Hyper-V lab, including virtual machine settings, server administration, Active Directory, DNS, and virtual networking.
-
-[View Windows Server Screenshots](./screenshots/)
+My goal is to build strong skills in operating systems, virtualization, directory services, networking, and infrastructure troubleshooting through hands-on projects and clear technical documentation.
