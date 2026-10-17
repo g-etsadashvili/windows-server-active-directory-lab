@@ -22,6 +22,7 @@ This repository records practical work, configuration attempts, technical observ
 - [5. Klientoperativ Course Topics](#5-klientoperativ-course-topics)
 - [6. Next Steps](#6-next-steps)
 - [Purpose](#purpose)
+- [Windows Server 2025 Lab Evidence](#windows-server-2025-lab-evidence)
 
 ## Overview
 
@@ -183,3 +184,8 @@ Planned work includes:
 This repository documents practical Windows infrastructure work, virtualization setup, configuration attempts, troubleshooting, and learning progress.
 
 The objective is to develop practical skills relevant to Windows Server administration, Active Directory, virtualization, and network administration.
+## Windows Server 2025 Lab Evidence
+
+Screenshots documenting the Windows Server 2025 and Hyper-V lab, including virtual machine settings, server administration, Active Directory, DNS, and virtual networking.
+
+[View Windows Server 2025 Lab Evidence](./YOUR-FOLDER-NAME/README.md)
