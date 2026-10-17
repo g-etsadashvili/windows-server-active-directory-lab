@@ -35,6 +35,8 @@ The documentation covers the lab environment, server configuration, network adap
 
 [View Windows Server 2025 Lab →](https://github.com/g-etsadashvili/windows-server-active-directory-lab/blob/main/windows-server-2025-lab/screenshots/README.md)
 
+
+
 ### 2. Windows 7 Professional Imaging Lab
 
 A separate imaging and deployment project documenting Windows 7 Professional preparation, Sysprep generalization, Windows PE, WIM image capture, and deployment to a test virtual machine.
