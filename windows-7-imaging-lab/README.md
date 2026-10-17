@@ -217,13 +217,13 @@ The following screenshots document the complete Windows 7 Professional imaging w
 
 ![Step 39](./screenshots/39%20confirming%20that%20I%20added%20additional%20drive%20Win7Pro-ImageDestination%20where%20I%20have%20WIM%20file.png)
 
-![Step 40](./screenshots/40%20Identifying%20the%20disks%20.png)
+![Step 40](./screenshots/40%20Identifing%20the%20disks.png)
 
 ![Step 41](./screenshots/41%20verifying%20which%20disk%20needs%20to%20be%20partitioned%20.png)
 
 ![Step 42](./screenshots/42%20partitioning%20disk%20addigning%20letters%20to%20drive.png)
 
-![Step 43](./screenshots/43%20successfully%20created.png)
+![Step 43](./screenshots/43%20sucessfully%20created.png)
 
 ![Step 44](./screenshots/44%20booting%20to%20windows%207%20pro%20Image%20Test.png)
 
