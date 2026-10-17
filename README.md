@@ -1,27 +1,44 @@
 # Windows Server 2025 & Active Directory Lab
 
+![Windows Server](https://img.shields.io/badge/Windows%20Server-2025-0078D4?logo=windows&logoColor=white)
+![Hyper-V](https://img.shields.io/badge/Virtualization-Hyper--V-0078D4?logo=windows&logoColor=white)
+![Active Directory](https://img.shields.io/badge/Directory%20Services-AD%20DS-4472C4)
+![Status](https://img.shields.io/badge/Status-In%20Progress-orange)
+
 ## Overview
+
+This repository documents my Windows infrastructure lab, including Hyper-V virtualization, Windows Server 2025, Windows client environments, and Active Directory configuration and troubleshooting.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Lab Architecture](#lab-architecture)
+- [Hyper-V Virtualization](#1-hyper-v-virtualization)
+- [Windows 11 Master Image](#2-windows-11-master-image)
+- [Active Directory Domain Services](#3-active-directory-domain-services)
+- [Windows Client Virtual Machines](#4-windows-client-virtual-machines)
+- [Klientoperativ Course Topics](#5-klientoperativ-course-topics)
+- [Next Steps](#6-next-steps)
+- [Purpose](#purpose)
 
 This repository documents my Windows Server and Windows client lab developed as part of my IT infrastructure studies. The environment uses Microsoft Hyper-V to explore Windows virtualization, server configuration, Active Directory, and network infrastructure.
 
 The lab is designed around a central Windows Server 2025 domain controller and multiple Windows client virtual machines.
 
-## Lab Environment
+## Lab Architecture
 
-**Hypervisor:** Microsoft Hyper-V
+The lab is designed around a Hyper-V host running Windows 11,
+with separate virtual machines for Windows Server and Windows clients.
 
-**Server operating system:** Windows Server 2025
+The intended architecture includes:
 
-**Virtual disk format:** VHDX
+- A Windows Server 2025 VM for Active Directory Domain Services and DNS.
+- Windows client VMs for administration and deployment testing.
+- A Hyper-V virtual switch named `External-Lab`.
 
-### Virtual Machines
-
-| Virtual machine | Operating system | Purpose |
-|---|---|---|
-| DC - Windows Server 2025 | Windows Server 2025 | Central server and intended domain controller |
-| Win7pro | Windows 7 Professional | Windows client lab |
-| Win10 | Windows 10 | Windows client lab |
-| Windows11 | Windows 11 | Windows client and deployment lab |
+**Note:** The diagram represents the intended lab design.
+Domain services and client connectivity are documented as verified
+only when successful tests have been completed.
 
 ## 1. Hyper-V Virtualization
 
