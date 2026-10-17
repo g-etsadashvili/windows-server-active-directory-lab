@@ -188,4 +188,4 @@ The objective is to develop practical skills relevant to Windows Server administ
 
 Screenshots documenting the Windows Server 2025 and Hyper-V lab, including virtual machine settings, server administration, Active Directory, DNS, and virtual networking.
 
-[View Windows Server 2025 Lab Evidence](./YOUR-FOLDER-NAME/README.md)
+[View Windows Server Screenshots](./screenshots/)
